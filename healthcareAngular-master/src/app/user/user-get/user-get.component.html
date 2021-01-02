@@ -1,0 +1,42 @@
+
+<div class="container">
+    
+  <h2>List Of Doctors</h2>
+  
+  
+  <table class="table">
+    <thead>
+      <tr>
+        <th>DoctorId</th>
+        <th>Doctorname</th>
+        <th>Speciality</th>
+        <th>Available</th>
+        <th>Location</th>
+        <th>Contact</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let obj of doctor">
+        <td>{{obj.docid}}</td>
+        <td>{{obj.docname}}</td>
+        <td>{{obj.speciality}}</td>
+        <td>{{obj.available}}</td>
+        <td>{{obj.location}}</td>
+        <td>{{obj.contact}}</td>
+        
+        
+      </tr>
+    </tbody>
+  </table>
+
+  <div><button routerLink="/appointment/create" >Book an Appointment</button>
+</div>
+<div class=footer>
+    <p>Contact Us: 8286334448 <br/>
+      Team: Ghostbuster
+   </p>
+   <p>Copyright &copy; 2019 <p></p>
+  </div>
+
+</div>
+

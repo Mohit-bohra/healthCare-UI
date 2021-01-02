@@ -1,0 +1,51 @@
+<!-- <div class="container">
+    <div class="row">
+        <input type="text" name="docname" [(ngModel)]="doctor.docname" disabled/>
+        <input type="text" name="docid" [(ngModel)]="doctor.docid" disabled/>
+        <input type="text" name="contact" [(ngModel)]="doctor.contact" disabled/>
+        <input type="text" name="location" [(ngModel)]="doctor.location" disabled/>
+        <input type="text" name="available" id="available" [(ngModel)]="doctor.available"/>
+        <button class="btn btn-success" (click)="Update(doctor.available)" >Update</button>
+    </div>
+</div> -->
+
+<h3>Update Doctor</h3>
+  <div [hidden]="submitted" style="width: 300px;">
+    <form >
+      <div class="form-group">
+        <label for="docid"> Doctor Id</label>
+        <input type="number" class="form-control" required [(ngModel)]="doctor.docid" id="docid" name="docid" >
+      </div>
+  
+      <div class="form-group">
+        <label for="available">Available</label>
+        <input type="date" class="form-control" required [(ngModel)]="doctor.available" id="available" name="available">
+      </div>
+
+      <div class="form-group">
+        <label for="contact">Contact</label>
+        <input type="number" class="form-control" required [(ngModel)]="doctor.contact" id="contact" name="contact">
+      </div>
+
+      <div class="form-group">
+        <label for="docname">Doctor Name</label>
+        <input type="text" class="form-control" required [(ngModel)]="doctor.docname" id="docname" name="docname">
+      </div>
+
+      <div class="form-group">
+        <label for="fee">Fees</label>
+        <input type="number" class="form-control" required [(ngModel)]="doctor.fee" id="fee" name="fee">
+      </div>
+
+      <div class="form-group">
+        <label for="location">Location</label>
+        <input type="text" class="form-control" required [(ngModel)]="doctor.location" id="location" name="location">
+      </div>
+
+      <div class="form-group">
+            <label for="speciality">Speciality</label>
+            <input type="text" class="form-control" required [(ngModel)]="doctor.speciality" id="speciality" name="speciality">
+          </div>
+      <button type="submit" class="btn btn-success" (click)="Update(doctor.available)">Update</button>
+    </form>
+  </div>

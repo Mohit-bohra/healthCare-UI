@@ -1,0 +1,40 @@
+
+
+    <div><button routerLink="/doctors/create" >Add New Doctor</button>
+    <button routerLink="/doctors/update">Update Doctor Record</button></div>
+  
+  <div class="container">
+        <h2>List Of Doctors</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>DoctorId</th>
+              <th>Doctorname</th>
+              <th>Speciality</th>
+              <th>Available</th>
+              <th>Location</th>
+              <th>Contact</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let obj of board" (click)="onSelection(obj)">
+              <td>{{obj.docid}}</td>
+              <td>{{obj.docname}}</td>
+              <td>{{obj.speciality}}</td>
+              <td>{{obj.available}}</td>
+              <td>{{obj.location}}</td>
+              <td>{{obj.contact}}</td>
+              <div><button (click)="deleteDoctor(obj.docid)">Delete</button></div>
+              
+            </tr>
+          </tbody>
+        </table>
+  </div>
+  <div class=footer>
+      <p>Contact Us: 8286334448 <br/>
+        Team: Ghostbuster
+     </p>
+     <p>Copyright &copy; 2019 <p></p>
+    </div>
+    
+

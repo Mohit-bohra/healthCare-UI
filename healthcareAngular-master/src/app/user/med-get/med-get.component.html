@@ -1,0 +1,52 @@
+<div class='card'>
+    <div class='card-body'>
+        <div class='row'>
+        </div>
+        <div class='row'>
+            <div class='col-md-6'>
+                <h4>Medicines</h4>
+            
+            </div>
+        </div>
+    <div class='table-hover'>
+        <table class='table'>
+
+            <thead>
+                <tr>
+                    <!-- <th>
+                            <button routerLink="/order">Show Order</button>
+                    </th> -->
+                
+                
+                    <th>Medicine Name</th>
+                    <th>InStock</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr *ngFor='let med of medicine'>
+                     <td>{{med.medname}}</td>
+                     <td>{{med.instock}}</td>
+                     <td>{{med.price | currency:'INR':'symbol':'1.2-2'}}</td>
+                     <input type="checkbox" name="med" data-md-icheck (change)="toggleVisibility(med)"/>
+                    </tr>      
+            </tbody>
+          </table>            
+    </div>  
+    </div>
+</div>
+<table>
+    <thead>
+       
+        <th>Cart</th>
+    </thead>
+    <tbody>
+        <tr *ngFor='let med of productCart'>
+        <td>{{med.medname}}</td>&nbsp;  
+        
+        </tr>        
+    </tbody>
+</table>
+
+        
+

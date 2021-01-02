@@ -1,0 +1,30 @@
+
+<div class="container">
+  <h2>List Of Appointment</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Appointment Id</th>
+        <th>Appointment Date</th>
+        <th>Fees</th>
+        <th>Doctor Id</th>
+       </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let obj of board">
+        <td>{{obj.appid}}</td>
+        <td>{{obj.appdate}}</td>
+        <td>{{obj.fees}}</td>
+        <td>{{obj.docid}}</td>
+        <!-- <div><button (click)="deleteDoctor(obj.appid)">Delete</button></div> -->
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class=footer>
+  <p>Contact Us: 8286334448 <br/>
+    Team: Ghostbuster
+ </p>
+ <p>Copyright &copy; 2019 <p></p>
+</div>

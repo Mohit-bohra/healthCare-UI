@@ -1,0 +1,125 @@
+<div *ngIf="info.token; else loggedOut">
+    <!-- <h5 class="text-primary">Your Information</h5> -->
+    <!-- <p>
+      <strong>Username:</strong> {{info.username}}<br/>
+      <strong>Roles:</strong> {{info.authorities}}<br />
+      <strong>Token:</strong> {{info.token}}.
+    </p> -->
+    <button class="btn btn-secondary" (click)="logout()">Logout</button>
+  </div>
+  
+  <ng-template #loggedOut>
+    <h3>Please login.</h3>
+  </ng-template>
+  
+  
+  
+  
+  
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <!-- <li data-target="#myCarousel" data-slide-to="1"></li> -->
+    </ol>
+  
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="https://www.practostatic.com/consumer-home/desktop/images/1562917238/banner-prime.jpg" alt="Image">
+        <div class="carousel-caption">
+          
+        </div>      
+      </div>
+  
+      <div class="item">
+        <img src="/assets/banner-plus.jpg" alt="Image">
+        <div class="carousel-caption">
+          
+        </div>      
+      </div>
+    </div>
+  </div>
+  <br>
+  
+  
+  <div class="container">    
+    <h1>Find doctors in top specialities</h1>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">DIETITIANS</div>
+        <div class="panel-body"><img src="/assets/dietitian-banner.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Changes in diet can help prevent or control many health problems, including obesity, diabetes and certain risk factors for cancer and heart disease.The field of dietetics has a strong emphasis on public health and a commitment to educating everyone about the importance of making proper dietary choices.</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+        <div class="panel panel-primary">
+          <div class="panel-heading">PHISIOTHERAPIST</div>
+          <div class="panel-body"><img src="/assets/ortho-and-sports.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+          <div class="panel-footer">Physiotherapists help people affected by injury, illness or disability through movement and exercise, manual therapy, education and advice. They maintain health for people of all ages, helping patients to manage pain and prevent disease.<br/><br/><br/></div>
+        </div>
+      </div>
+  
+      <div class="col-sm-4"> 
+          <div class="panel panel-primary">
+            <div class="panel-heading">ACCUPUNCTURIST</div>
+            <div class="panel-body"><img src="/assets/bld070928_kb.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+            <div class="panel-footer">It is based on the premise that a blockage or disturbance in the flow of the body's life energy, or “qi,” can cause health issues. Acupuncturists insert hair-thin needles to specific acupuncture points throughout the body to restore the flow of qi, balance the body's energy, stimulate healing, and promote relaxation.</div>
+          </div>
+        </div>
+  
+  </div>
+  </div>
+  
+  <div class="container"> 
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">VETERINARY</div>
+        <div class="panel-body"><img src="/assets/PreVeterinaryScience-913x513.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Veterinarians are very important people in our society. The reason they are important to me is because they save many animals' lives everyday. ... Veterinarians help animals get better by giving them medicine or performing surgery on them.<br/><br/><br></div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">GYNAECOLOGIST</div>
+        <div class="panel-body"><img src="/assets/Gynac.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">A gynecologist specializes in the health and diseases of the female reproductive system. Many such doctors are also obstetricians who work with women to keep pregnancies healthy and to deliver babies.<br/><br/><br/></div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">SURGEON</div>
+        <div class="panel-body"><img src="/assets/Spine-Center-orthopedic-surgeons.jpg" class="img-responsive" style="width:100%; height:130%" alt="Image"></div>
+        <div class="panel-footer">The surgeon is responsible for the preoperative diagnosis of the patient, for performing the operation, and for providing the patient with postoperative surgical care and treatment. ... During the course of an operation, the surgeon must make important decisions about the patient's health.<br/><br/></div>
+      </div>
+    </div>
+  </div>
+  </div><br><br>
+  <!-- <footer class="container-fluid text-center">
+  <p>Contact Us: 8286334448 <br/>
+     Team: Ghostbuster
+  </p>
+  <p>Copyright &copy; 2019 <p></p>
+  </footer> -->
+  <div class=footer>
+      <p>Contact Us: 8286334448 <br/>
+        Team: Ghostbuster
+     </p>
+     <p>Copyright &copy; 2019 <p></p>
+    </div>  
+  </body>
+  </html>
+  
